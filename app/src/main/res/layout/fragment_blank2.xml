@@ -8,7 +8,19 @@
     <!-- TODO: Update blank fragment layout -->
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="110dp"
+        android:layout_weight="3"
+        android:text="@string/hello_blank_fragment2"
+        android:textAlignment="center"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="222sp"
+        android:layout_height="81sp"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:text="SearchPage"
+        android:layout_marginTop="30sp"/>
 
 </FrameLayout>
