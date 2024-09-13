@@ -1,16 +1,15 @@
 package se.gritacademy.getakelemwork.api_integration_v4
 
+import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
-import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.FragmentContainerView
-import androidx.navigation.fragment.NavHostFragment
 import coil.load
 import com.android.volley.Request
 import com.android.volley.RequestQueue
@@ -29,6 +28,7 @@ class MainActivity : AppCompatActivity() {
    lateinit var imageView:ImageView
     var intetst:Int = 0
 
+    @SuppressLint("SuspiciousIndentation")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -65,6 +65,14 @@ class MainActivity : AppCompatActivity() {
                     }
                 })
                 btn2.setOnClickListener({
+                    // Temp button swtich untill we can fix the damn fragments.
+                    // they legit dont work alrik I tested with your code it dosent work
+                    // im sorry give me a chance on tuesday wiht you or email.
+                    val i = Intent(
+                        this@MainActivity,
+                        MainActivity2::class.java
+                    )
+                    startActivity(i)
                     intetst = 0
                     insertstring = JSONObject(res).getJSONArray("message").getString(intetst)
                     imageView.load(insertstring)
@@ -78,7 +86,7 @@ class MainActivity : AppCompatActivity() {
                             tv.setText("Page " + intetst)
                     insertstring = JSONObject(res).getJSONArray("message").getString(intetst)
                     } else if (intetst > length){
-                        intetst = 0
+                        this.intetst = 0
                             tv.setText("Page " + intetst)
                     insertstring = JSONObject(res).getJSONArray("message").getString(intetst)
                             imageView.load(insertstring)

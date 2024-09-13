@@ -43,9 +43,9 @@
         android:layout_width="285dp"
         android:layout_height="34dp"
         android:layout_gravity="center"
-        android:layout_weight="1"
         android:layout_marginBottom="10sp"
-        android:text="BackToStart"
+        android:layout_weight="1"
+        android:text="BackToStart/activity"
         android:textSize="20sp" />
 
     <ImageView
