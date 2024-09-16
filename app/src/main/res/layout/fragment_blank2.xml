@@ -15,7 +15,7 @@
         android:textSize="30sp" />
 
     <Button
-        android:id="@+id/button4"
+        android:id="@+id/button4frag2"
         android:layout_width="222sp"
         android:layout_height="81sp"
         android:layout_gravity="center"

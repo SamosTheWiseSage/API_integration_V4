@@ -24,7 +24,7 @@
         android:ems="10"
         android:hint="Please write dog breed here"
         android:inputType="text"
-        android:textSize="20sp" />
+        android:textSize="45sp" />
 
     <ImageView
         android:id="@+id/imageView2"

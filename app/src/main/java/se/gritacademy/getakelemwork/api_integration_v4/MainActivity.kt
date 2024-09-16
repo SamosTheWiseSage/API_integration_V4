@@ -65,14 +65,6 @@ class MainActivity : AppCompatActivity() {
                     }
                 })
                 btn2.setOnClickListener({
-                    // Temp button swtich untill we can fix the damn fragments.
-                    // they legit dont work alrik I tested with your code it dosent work
-                    // im sorry give me a chance on tuesday wiht you or email.
-                    val i = Intent(
-                        this@MainActivity,
-                        MainActivity2::class.java
-                    )
-                    startActivity(i)
                     intetst = 0
                     insertstring = JSONObject(res).getJSONArray("message").getString(intetst)
                     imageView.load(insertstring)
